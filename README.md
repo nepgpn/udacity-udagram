@@ -11,6 +11,10 @@ Following files in the dir.
 
 
 
-Run the script  following way
+Run the command to generate the resource 
 
 aws cloudformation create-stack  --stack-name udagramstack --region us-east-2 --template-body file://udagram.yml --parameters file://parameter.json --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM"
+
+
+Run the coomand to destroy the resource.
+aws cloudformation delete-stack --stack-name udagramstack 
